@@ -1,0 +1,13 @@
+234344:
+    container_url: nvcr.io/nim/meta/llama-3.1-8b-instruct:1.2.0
+    model: meta/llama-3.1-8b-instruct
+    workspace: !workspace
+        components:
+            - dst: ""
+              src:
+                files:
+                    - !name LICENSE.txt
+                    - !name  checksums.blake3
+                    - !name config.json
+                    - !name generation_config.json
+                    - !name model.safetensors.index.json
